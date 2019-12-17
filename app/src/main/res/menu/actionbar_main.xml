@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_search"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"/>
+        <!-- showAsAction="always" : 제목줄(ActionBar)에 항상 아이콘으로 노출됨 -->
+
+    <item
+        android:id="@+id/menu_add"
+        android:title="Add"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="ifRoom"/>
+        <!-- showAsAction="ifRoom" : 제목줄(ActionBar)에 제목글씨를 제외하고 놓여질 공간이 있으면 노출, 아니면 오버플로우메뉴로 들어가는 설정[권장] -->
+
+    <item
+        android:id="@+id/menu_helf"
+        android:title="Helf"
+        android:icon="@android:drawable/ic_menu_help"
+        app:showAsAction="never"/>
+        <!-- showAsAction="never" : 항상 오버플로우(오른쪽 끝 세로 점3개 아이콘) 메뉴에 숨었다가 눌렀을 때 노출되는 설정 -->
+        <!-- 오버플로우(오른쪽 끝 세로 점3개 아이콘) 메뉴에 숨은 메뉴아이템은 기본적으로 아이콘이 보이지 않음 -->
+
+    <item
+        android:id="@+id/menu_aaa"
+        android:title="aaa"
+        app:showAsAction="never"/>
+
+</menu>
+
